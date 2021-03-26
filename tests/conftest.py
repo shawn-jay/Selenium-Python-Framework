@@ -1,6 +1,7 @@
 #this is like the configuration file for all the py.tests
 import pytest
 from selenium import webdriver
+from Framework.base.webdriverfactory import WebDriverFactory
 
 @pytest.fixture()
 def setUp():
@@ -12,19 +13,8 @@ def setUp():
 @pytest.fixture(scope="class") #scope=module means it will run setUp before all the tests, and tearDown after all the tests
 def oneTimeSetUp(request, browser):
 
-    baseURL = "https://www.saucedemo.com/"
-    driver = None
-    print("Running one time setUp")
-    if browser == 'firefox':
-        driver = webdriver.Firefox()
-        print("Running tests on FF")
-    else:
-        driver = webdriver.Chrome()
-        print("Running tests on Chrome")
-
-    driver.maximize_window()
-    driver.implicitly_wait(3)
-    driver.get(baseURL)
+    wdf = WebDriverFactory(browser)
+    driver = wdf.getWebDriverInstance()
 
     if request.cls is not None:
         request.cls.driver = driver

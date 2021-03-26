@@ -32,6 +32,7 @@ class LoginPage(SeleniumDriver):
 
     def login(self, email="", password=""):
         #self.clickLoginLink()
+        self.driver.refresh()
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickLoginButton()

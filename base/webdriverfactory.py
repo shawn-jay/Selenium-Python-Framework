@@ -24,3 +24,4 @@ class WebDriverFactory():
         driver.maximize_window()
         driver.implicitly_wait(3)
         driver.get(baseURL)
+        return driver

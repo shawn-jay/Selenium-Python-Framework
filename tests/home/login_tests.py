@@ -15,7 +15,6 @@ class LoginTests(unittest.TestCase):
 
     @pytest.mark.run(order=2)
     def test_validLogin(self):
-        self.driver.refresh()
         self.lp.login("standard_user", "secret_sauce")
         result = self.lp.verifyLoginSuccessful()
         assert result == True
