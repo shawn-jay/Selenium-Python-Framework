@@ -1,0 +1,32 @@
+03/22/2021 09:34:47 PM - LoginTests - INFO: Test 1
+03/22/2021 09:35:14 PM - LoginPage - INFO: Element Found with locator: user-name and locatorType: id
+03/22/2021 09:35:15 PM - LoginPage - INFO: Clicked on element with locator: user-name locatorType: id
+03/22/2021 09:35:17 PM - LoginPage - INFO: Element Found with locator: password and locatorType: id
+03/22/2021 09:35:17 PM - LoginPage - INFO: Clicked on element with locator: password locatorType: id
+03/22/2021 09:35:18 PM - LoginPage - INFO: Element Found with locator: btn_action and locatorType: class
+03/22/2021 09:35:18 PM - LoginPage - INFO: Clicked on element with locator: btn_action locatorType: class
+03/22/2021 09:36:52 PM - LoginTests - INFO: Test 2
+03/22/2021 09:36:52 PM - LoginPage - INFO: Element Found with locator: user-name and locatorType: id
+03/22/2021 09:36:52 PM - LoginPage - INFO: Clicked on element with locator: user-name locatorType: id
+03/22/2021 09:36:52 PM - LoginPage - INFO: Element Found with locator: password and locatorType: id
+03/22/2021 09:36:52 PM - LoginPage - INFO: Clicked on element with locator: password locatorType: id
+03/22/2021 09:36:52 PM - LoginPage - INFO: Element Found with locator: btn_action and locatorType: class
+03/22/2021 09:36:52 PM - LoginPage - INFO: Clicked on element with locator: btn_action locatorType: class
+03/22/2021 09:36:59 PM - LoginTests - INFO: Test 1
+03/22/2021 09:36:59 PM - LoginPage - INFO: Element Found with locator: user-name and locatorType: id
+03/22/2021 09:36:59 PM - LoginPage - INFO: Clicked on element with locator: user-name locatorType: id
+03/22/2021 09:36:59 PM - LoginPage - INFO: Element Found with locator: password and locatorType: id
+03/22/2021 09:36:59 PM - LoginPage - INFO: Clicked on element with locator: password locatorType: id
+03/22/2021 09:37:00 PM - LoginPage - INFO: Element Found with locator: btn_action and locatorType: class
+03/22/2021 09:37:00 PM - LoginPage - INFO: Clicked on element with locator: btn_action locatorType: class
+03/22/2021 09:37:02 PM - LoginPage - INFO: Element Found with locator: //div[contains(text(), 'Labs Backpack')] and locatorType: xpath
+03/22/2021 09:37:02 PM - LoginPage - INFO: Element Found
+03/23/2021 07:34:22 PM - LoginTests - INFO: Test 1
+03/23/2021 07:34:22 PM - LoginPage - INFO: Element Found with locator: user-name and locatorType: id
+03/23/2021 07:34:22 PM - LoginPage - INFO: Clicked on element with locator: user-name locatorType: id
+03/23/2021 07:34:22 PM - LoginPage - INFO: Element Found with locator: password and locatorType: id
+03/23/2021 07:34:22 PM - LoginPage - INFO: Clicked on element with locator: password locatorType: id
+03/23/2021 07:34:22 PM - LoginPage - INFO: Element Found with locator: btn_action and locatorType: class
+03/23/2021 07:34:23 PM - LoginPage - INFO: Clicked on element with locator: btn_action locatorType: class
+03/23/2021 07:34:25 PM - LoginPage - INFO: Element Found with locator: //div[contains(text(), 'Labs Backpack')] and locatorType: xpath
+03/23/2021 07:34:25 PM - LoginPage - INFO: Element Found with locator: //div[contains(text(), 'Labs Backpack')] locatorType: xpath
