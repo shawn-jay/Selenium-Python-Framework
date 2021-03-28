@@ -45,3 +45,10 @@ class LoginPage(SeleniumDriver):
     def verifyLoginFailed(self):
         result = self.isElementPresent("//h3[@data-test='error']", "xpath")
         return result
+
+    def verifyTitle(self, title):
+        if self.getTitle() == title:
+            return True
+        else:
+            self.log.info(str(self.getTitle()))
+            return False

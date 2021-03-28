@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from Framework.pages.home.login_page import LoginPage
+from Framework.utilities.test_status import TestStatus
 import unittest
 import pytest
 
@@ -12,6 +13,7 @@ class LoginTests(unittest.TestCase):
     @pytest.fixture(autouse=True)
     def classSetup(self, oneTimeSetUp):
         self.lp = LoginPage(self.driver)
+        self.ts = TestStatus()
 
     @pytest.mark.run(order=2)
     def test_validLogin(self):
@@ -25,3 +27,11 @@ class LoginTests(unittest.TestCase):
         result = self.lp.verifyLoginFailed()
         assert result == True
 
+    @pytest.mark.run(order=3) # this should fail on purpose
+    def test_titleOfWebsite(self):
+        result1 = self.lp.verifyTitle("Sauce Labs")
+        self.ts.mark(result1, "Title is incorrect")
+        #assert result1
+        result2 = self.lp.verifyTitle("Swag Labs")
+        self.ts.markFinal("test_VerifyTitle_2", result2, "Title 2 is incorrect")
+        #assert result2
